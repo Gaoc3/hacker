@@ -1,6 +1,8 @@
 language: ruby
 cache: bundler
 rvm: 2.6
-
+runs:
+  using: 'node20'
+  main: 'main.js'
 install: script/bootstrap
 script: script/cibuild
